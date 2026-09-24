@@ -8,6 +8,14 @@ Vi Optimizer checks:
 
 `https://raw.githubusercontent.com/Zelv-rus/ViOptimizer-Updates/main/latest.json`
 
-The feed is currently initialized but disabled until the in-app updater is bootstrapped.
+Vi Optimizer 0.11.0 contains the in-app updater bootstrap.
 
-Future release packages will be published as GitHub Release assets and verified by the application before installation.
+Normal update behavior:
+- automatic feed checks are throttled to once per 6 hours;
+- packages are accepted only from this repository's GitHub Releases path;
+- SHA-256 is verified before installation;
+- the current runtime is backed up before replacement;
+- the updated app must confirm a healthy start;
+- failed startup triggers automatic rollback.
+
+The feed stays disabled until a newer release package is actually available.
