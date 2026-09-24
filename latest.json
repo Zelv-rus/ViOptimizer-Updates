@@ -2,9 +2,9 @@
   "schema": 1,
   "channel": "stable",
   "enabled": false,
-  "latestVersion": "0.10.0",
+  "latestVersion": "0.11.0",
   "mandatory": false,
   "publishedAt": "2026-09-24T00:00:00Z",
   "package": null,
-  "notes": "Update feed initialized. In-app updates will be enabled after ViUpdater is bootstrapped."
+  "notes": "Vi Update bootstrap is ready. Feed remains disabled until the first post-bootstrap release package is published."
 }
